@@ -77,7 +77,7 @@ function populateEpisodes(episodesList){
   $('#episodes-list').empty();
   
   for (let episode of episodesList){
-    let episodeInfo = `<li>Episode: ${episode.name}, Season: ${episode.season}, Episode: ${episode.number} </li>`
+    let episodeInfo = `<li>S${episode.season} E${episode.number} - ${episode.name} </li>`
     $('#episodes-list').append(episodeInfo)
   }
 }
