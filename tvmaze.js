@@ -24,8 +24,8 @@ function populateShows(shows) {
            <div class="card-body">
              <h5 class="card-title">${show.name}</h5>
              <p class="card-text">${show.summary}</p>
-             <div class="col-12 col-sm-auto mx-auto d-flex justify-sm-content-end">
-              <button type= "button" class="btn btn-block btn-info mx-auto" data-bs-toggle="modal" data-bs-target="exampleModal">View Episodes</button>
+             <div class="d-grid">
+              <button type= "button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">View Episodes</button>
              </div>
            </div>
          </div>
