@@ -1,5 +1,5 @@
 async function searchShows(query) {
-  let response = await axios.get('http://api.tvmaze.com/search/shows?q=', {params: {q: query}})
+  let response = await axios.get('https://api.tvmaze.com/search/shows?q=', {params: {q: query}})
 
   let shows = response.data.map(result => {    
     return{
@@ -60,7 +60,7 @@ $('#shows-list').on('click','button', async function episodeRequest (evt){
 })
 
 async function getEpisodes(id) {
-  let response = await axios.get(`http://api.tvmaze.com/shows/${id}/episodes`)
+  let response = await axios.get(`https://api.tvmaze.com/shows/${id}/episodes`)
 
   let episodesList = response.data.map(episode => {
     return{
